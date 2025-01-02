@@ -19,12 +19,13 @@ function Timing() {
     {/*<button style={{height:'30%',marginTop:'35px'}} onClick={handleClick}>-</button>
     <p style={{display:'flex',fontSize:'30px',alignItems:'center',justifyContent:'center'}} >{count}</p>
     <button style={{height:'30%',marginTop:'35px'}} onClick={handleUpClick}>+</button>*/}
+
+    < TimerLogic count = {count} />
+    <TimerScreen   handleClick = {handleClick}
+                handleUpClick={handleUpClick}/>
+             
     
-    <TimerLogic count={count}/>
-    <TimerScreen
-     handleClick={handleClick}
-     handleUpClick={handleUpClick}
-    />
+    
     </div>
     
   );

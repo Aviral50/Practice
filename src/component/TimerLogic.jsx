@@ -11,6 +11,7 @@ function TimerLogic({count}) {
           justifyContent: "center",
         }}
       >
+        
         {count}
       </p>
     </div>
