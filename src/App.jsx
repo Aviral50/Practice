@@ -1,17 +1,15 @@
-import React, { createContext } from 'react'
-import ChildA from './components/ChildA'
+import React from 'react'
+import Form from './components/Form'
 
-const data=createContext()
 function App() {
-  const name="Aviral Mishra"
   return (
     <div>
-      <data.Provider value={name}>
-      <ChildA/>
-     </data.Provider>
+
+      <Form></Form>
+
+
     </div>
   )
 }
 
 export default App
-export {data}
