@@ -1,0 +1,58 @@
+import styles from "./ButtonContainer.module.css";
+const ButtonContainer = ({ buttonOnClick }) => {
+  const buttonNames = ["c", "1", "2", "3", "4", "5", "6", "=", "+", "-", "*"];
+
+  return (
+    <div className={styles.buttonContainer}>
+      {buttonNames.map((buttonNames) => (
+        <button className={styles.button} onClick={() => buttonOnClick(buttonNames)}>
+          {buttonNames}
+        </button>
+      ))}
+    </div>
+  );
+};
+
+export default ButtonContainer;
+
+
+import styles from "./Display.module.css"
+const Display=({calVal})=>{
+    return     <input type='text' className={styles.display} readOnly value={calVal}/>
+}
+export default Display;
+
+
+
+import React, { useState } from 'react'
+import styles from './App.module.css'
+import Display from './components/Display'
+import ButtonContainer from './components/Buttoncontainer'
+
+
+
+function App() {
+
+ const[calVal,setCalVal]=useState('')
+ const buttonOnClick=(buttonText)=>{
+  if(buttonText==='c'){
+    setCalVal('')
+}else if(buttonText==='='){
+  const result=eval(calVal)
+  setCalVal(result)
+}else{
+  const newDisplayValue=calVal+buttonText
+  setCalVal(newDisplayValue)
+}
+ }
+
+  return (
+   <div className={styles.container}>
+   <Display calVal={calVal}></Display>
+    <ButtonContainer buttonOnClick={buttonOnClick}></ButtonContainer>
+   </div>
+    
+  )
+}
+
+export default App
