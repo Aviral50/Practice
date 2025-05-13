@@ -1,0 +1,167 @@
+
+//function reverseString(str) {
+//      return [...str].reverse().join('')
+//}
+//console.log(reverseString('hello'))
+
+//let array=[1,2,3,4]
+//let str='1,2,3,4'
+//console.log(array==str)  here loose euality operator is used.
+
+
+// let a= 10
+// let b = 2
+// console.log(`sum is ${a+b} and not 401`)
+
+
+// let a = [1,2,3,4,5,5]
+// let newValue= a.reduce((prev,curr)=>{
+// return prev+curr
+// })
+// console.log(newValue)
+
+// let arr = [1,2,3,4,5,5]
+// let newArr=arr.filter((element)=>{
+//    return element%2===0
+// })
+// console.log(newArr)
+
+// let arr=[1,2,3,4,5]
+// let newArr=arr.map((element)=>{
+//     return element*2
+// })
+// console.log(newArr)
+
+
+// function fun1(){
+//     let a= 5
+//     function fun2(){
+//         console.log(a)
+//     }
+//     return fun2
+// }
+// let final=fun1()
+// final()
+
+
+// let str = 'aviral';
+// let news = str.split('').reverse().join('');////////////with builtin methods
+// console.log(news);
+
+
+//withoutbuilt-in methods
+// let str='aviral'
+// let reversestr=''
+
+// for(i=str.length-1 ; i>=0;i--){
+//     reversestr=reversestr+str[i]
+// }
+// console.log(reversestr)
+
+
+
+//let and const has block scoped but var has function scoped
+
+// for (var i=0;i<=3;i++){
+//     //console.log(i)
+// }
+// console.log(i)
+// for (let i=0;i<=3;i++){
+//     //console.log(i)
+// }
+// console.log(i)
+
+
+//hoisting
+
+//var is hoisted with initiaized but let and const are  hoisted but not initializes and function are fully hoisted 
+
+//to add two numbers
+
+
+// mapping a list
+
+// function Practice() {
+//     const data=[1,2,3,4];
+//     return (
+//       <div>
+//         <ul>
+//          {data.map((element)=>(
+//             <li key={element}>{element}</li>
+//          ))}
+//          </ul>
+//       </div>
+//     )
+//   }
+
+
+
+//creating tabe from json api data
+
+    //     <>
+    //   <th>DATA TABLE</th>
+    //   <table border={1}>
+    //   <thead>
+    //     <tr>
+    //         <th>id</th>
+    //         <th>firstname</th>
+    //     </tr>
+    //   </thead>
+    //   <tbody>
+    //     {data.map((item)=>(
+    //         <tr>
+    //             <td>{item.id}</td>
+    //             <td>{item.first_name}</td>
+    //         </tr>
+    //     ))}
+    //   </tbody>
+    //   </table>
+    //     </>
+
+//date- 18 march 2025
+//function to add two numbers
+// let a=130
+// let b=20
+// function sum(){
+//   return sum=a+b
+// }
+// sum()
+// console.log(sum)
+
+
+// function reverseString(){
+//     let str="aviral"
+//    return str.split('').reverse().join('');
+// }
+
+// console.log(reverseString())
+// function reverseString(){
+//     let str='happy'
+//     let reverse =''
+//     for(let i=str.length-1;i>=0;i--){
+//         reverse=reverse+str[i]
+//     }
+//     return reverse
+// }
+// console.log(reverseString())
+
+//largest number amnong three numbers
+// function findLargest(){
+//     let largest;
+//     let number1=20
+//     let number2=20
+//     let number3=10
+//     if (number1>number2>number3){
+//         largest=number1
+//     }
+//     else if(number2>number1>number3){
+//         largest=number2
+//     }
+//     else{
+//         largest=number3
+//     }
+//     return largest
+// }
+// console.log(findLargest())
+
+
